@@ -1,0 +1,404 @@
+/* COLOR VARIABLES */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+
+  --background-color: #f5f4fa;
+  --contrast-background-color: #2f303a;
+
+  --main-decor-color: #2196f3;
+  --secondary-decor-color: #188ce8;
+  --third-decor-color: #ffffff;
+
+  --logo-secondary-color: #000000;
+
+  --border-color: #EEEEEE;
+
+}
+
+/*
+*** GENERAL ***
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--third-decor-color);
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding-top {
+  padding-top: 0;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title,
+.advantage-value,
+.member-name,
+.project-title {
+  color: var(--secondary-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-decor-color);
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/*
+*** COMPONENTS ***
+*/
+
+/* HEADER */
+
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo-part {
+  color: var(--logo-secondary-color);
+}
+
+.page-header .link {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.main-navigation .link {
+  color: var(--secondary-text-color);
+}
+
+.link.active {
+  color: var(--main-decor-color);
+}
+
+.header-contact-us .link {
+  color: var(--primary-text-color);
+  line-height: 1.14;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper .link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header .logo {
+  margin-right: 93px;
+}
+
+.site-nav {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header-contact-us {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
+
+
+
+/* .link:hover,
+.link:focus,
+.page-footer .link:hover,
+.page-footer .link:focus {
+  color: var(--main-decor-color);
+} */
+
+
+/* HERO */
+
+.hero {
+  background-color: var(--contrast-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero .hero-title {
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-decor-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero .btn.make-order {
+  color: var(--third-decor-color);
+  background-color: var(--main-decor-color);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 32px;
+}
+
+.hero .btn.make-order:hover,
+.hero .btn.make-order:focus {
+  background-color: var(--secondary-decor-color);
+}
+
+/* OUR ADVANTAGES */
+.advantage-value {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.advantage-description {
+  line-height: 1.71;
+}
+
+/* OUR OCCUPATION */
+
+.occupation-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+/* OUR TEAM */
+.our-team {
+  background-color: var(--background-color);
+}
+
+.team-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.our-team .team-card {
+  background-color: var(--third-decor-color);
+  text-align: center;
+}
+
+.team-details-wrapper {
+  padding: 30px 0;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.team-card .position {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: var(--contrast-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.page-footer .logo-part {
+  color: var(--third-decor-color);
+}
+
+.page-footer .contact-us {
+  font-style: normal;
+}
+
+.contact-item {
+  margin-bottom: 9px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-us .link {
+  color: rgba(var(--third-decor-color), 0.6);
+  line-height: 1.71;
+}
+
+.contact-us .our-location {
+  color: var(--third-decor-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--main-decor-color);
+}
+
+/* 
+**** PORTFOLIO PAGE ***
+*/
+
+/* FILTER SECTION */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--background-color);
+  padding: 6px 22px;
+}
+
+.filter .select-all {
+  padding: 6px 25px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--main-decor-color);
+  color: var(--third-decor-color);
+}
+
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+/* OUR WORKS */
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+
+.project-details {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
