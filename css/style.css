@@ -166,6 +166,26 @@ a {
 .header-contact-us .link {
   color: var(--primary-text-color);
   line-height: 1.14;
+  fill: currentColor;
+}
+
+.header-contact-us .link:hover {
+  color: var(--main-decor-color);
+  fill: var(--main-decor-color);
+}
+
+.header-icon {
+  margin-right: 10px;
+}
+
+.header-contact-us .mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.header-contact-us .phone-book-icon {
+  width: 10px;
+  height: 16px;
 }
 
 .header-wrapper {
@@ -174,7 +194,8 @@ a {
 }
 
 .header-wrapper .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -192,17 +213,8 @@ a {
   display: flex;
   column-gap: 50px;
   margin-left: auto;
+  align-items: center;
 }
-
-
-
-/* .link:hover,
-.link:focus,
-.page-footer .link:hover,
-.page-footer .link:focus {
-  color: var(--main-decor-color);
-} */
-
 
 /* HERO */
 
@@ -338,8 +350,8 @@ a {
   color: var(--third-decor-color);
 }
 
-.link:hover,
-.link:focus {
+.page-footer .link:hover,
+.page-footer .link:focus {
   color: var(--main-decor-color);
 }
 
@@ -374,6 +386,7 @@ a {
   justify-content: center;
   column-gap: 8px;
 }
+
 /* OUR WORKS */
 
 .project-title {
