@@ -13,6 +13,8 @@
   --logo-secondary-color: #000000;
 
   --border-color: #eeeeee;
+
+  --icon-main-color: #AFB1B8;
 }
 
 /*
@@ -336,7 +338,61 @@ a {
 .team-card .position {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social-link {
+  /* remove additional height of line-height */
+  line-height: 0;
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--icon-main-color);
+}
+
+.social-link .icon {
+  fill: currentColor;
+}
+
+.social-link:hover {
+  color: var(--third-decor-color);
+  background-color: var(--main-decor-color);
+  column-gap: 30px;
+}
+
+/* CLIENTS */
+.partners-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.partner-link {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-main-color);
+  border: 1px solid var(--icon-main-color);
+  border-radius: 4px;
+}
+
+.partner-logo {
+  fill: currentColor;
+}
+
+.partner-link:hover {
+  border: 1px solid var(--main-decor-color);
+}
+
 
 /* FOOTER */
 
@@ -381,6 +437,28 @@ a {
   color: var(--main-decor-color);
 }
 
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.page-footer .social-icons {
+  justify-content: flex-start;
+}
+
+.page-footer .social-link {
+  color: var(--third-decor-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .social-link:hover {
+  background-color: var(--main-decor-color);
+}
+
+
 /* 
 **** PORTFOLIO PAGE ***
 */
@@ -404,6 +482,7 @@ a {
 .filter-btn:focus {
   background-color: var(--main-decor-color);
   color: var(--third-decor-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
@@ -414,6 +493,10 @@ a {
 }
 
 /* OUR WORKS */
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .project-title {
   font-weight: 700;
