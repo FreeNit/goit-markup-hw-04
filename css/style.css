@@ -402,6 +402,10 @@ a {
   padding-bottom: 60px;
 }
 
+.our-main-contacts {
+  display: flex;
+}
+
 .page-footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -437,12 +441,17 @@ a {
   color: var(--main-decor-color);
 }
 
+.our-social {
+  margin-left: 70px;
+}
+
 .social-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .page-footer .social-icons {
