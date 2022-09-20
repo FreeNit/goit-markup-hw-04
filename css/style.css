@@ -266,6 +266,19 @@ a {
 }
 
 /* OUR ADVANTAGES */
+
+.advantage-icon-wrapper {
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--background-color);
+}
+
+.advantage-icon {
+  height: 70px;
+  width: 70px;
+}
+
 .advantage-value {
   font-weight: 700;
   font-size: 14px;
