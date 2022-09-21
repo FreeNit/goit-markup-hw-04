@@ -14,7 +14,7 @@
 
   --border-color: #eeeeee;
 
-  --icon-main-color: #AFB1B8;
+  --icon-main-color: #afb1b8;
 }
 
 /*
@@ -170,7 +170,8 @@ a {
   fill: currentColor;
 }
 
-.header-contact-us .link:hover {
+.header-contact-us .link:hover,
+.header-contact-us .link:focus {
   color: var(--main-decor-color);
   fill: var(--main-decor-color);
 }
@@ -220,15 +221,10 @@ a {
 /* HERO */
 
 .hero {
-  background-color: var(--contrast-background-color);
-}
-
-.overlay {
-  height: 600px;
+  background-color: #C4C4C4;
   max-width: 1600px;
   margin: 0 auto;
-  background-image:
-    linear-gradient(rgba(47, 48, 58, 0.4),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../images/hero_bg.jpg);
   background-repeat: no-repeat;
@@ -260,6 +256,7 @@ a {
   cursor: pointer;
   display: inline-block;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero .btn.make-order:hover,
@@ -389,10 +386,11 @@ a {
   fill: currentColor;
 }
 
-.partner-link:hover {
-  border: 1px solid var(--main-decor-color);
+.partner-link:hover,
+.partner-link:focus {
+  border-color: var(--main-decor-color);
+  color: var(--main-decor-color);
 }
-
 
 /* FOOTER */
 
@@ -404,6 +402,7 @@ a {
 
 .our-main-contacts {
   display: flex;
+  align-items: baseline;
 }
 
 .page-footer .logo {
@@ -450,12 +449,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
-}
-
-.page-footer .social-icons {
-  justify-content: flex-start;
 }
 
 .page-footer .social-link {
@@ -463,10 +458,10 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.page-footer .social-link:hover {
+.page-footer .social-link:hover,
+.page-footer .social-link:focus {
   background-color: var(--main-decor-color);
 }
-
 
 /* 
 **** PORTFOLIO PAGE ***
@@ -491,7 +486,8 @@ a {
 .filter-btn:focus {
   background-color: var(--main-decor-color);
   color: var(--third-decor-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
@@ -503,8 +499,11 @@ a {
 
 /* OUR WORKS */
 
-.project-card:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-lint:hover,
+.project-link:focus {
+  display: inline-block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
