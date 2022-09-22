@@ -170,8 +170,9 @@ a {
   fill: currentColor;
 }
 
-.header-contact-us .link:hover,
-.header-contact-us .link:focus {
+
+.page-header .link:hover,
+.page-header .link:focus {
   color: var(--main-decor-color);
   fill: var(--main-decor-color);
 }
@@ -427,7 +428,7 @@ a {
 }
 
 .contact-us .link {
-  color: rgba(var(--third-decor-color), 0.6);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
 }
 
@@ -499,7 +500,7 @@ a {
 
 /* OUR WORKS */
 
-.project-lint:hover,
+.project-link:hover,
 .project-link:focus {
   display: inline-block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
